@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta tu status</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Botón para contactar por WhatsApp -->
+      <button onclick="contactarWhatsApp()" class="whatsapp-button">
+        Contáctame por WhatsApp
+      </button>
+
+      <!-- Input para ingresar el código de confirmación -->
+
+      <div class="consulta">
+        <input
+          type="text"
+          id="codigoConfirmacion"
+          placeholder="Ingresa tu código de confirmación"
+        />
+        <button onclick="consultarEstado()">Consultar Estado</button>
+        <p id="estadoResultado"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
